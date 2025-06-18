@@ -1,0 +1,57 @@
+/* Donate Section */
+.donate-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #D3EAFE; /* Matching theme */
+}
+
+/* Donation Card Container */
+.donate-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Ensures proper responsiveness */
+  margin-top: 2rem;
+}
+
+/* Individual Donation Cards */
+.donate-card {
+  background-color: #fff8f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.donate-card:hover {
+  transform: scale(1.05);
+}
+
+/* Donation Card Images */
+.donate-img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+/* Buttons */
+.donate-btn {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #FF87CA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+  background-color: #D67BA0;
+}

@@ -1,0 +1,75 @@
+.login-page {
+  background-color: #D3EAFE; /* Matching Home & About */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff8f0; /* Soft beige matching card style */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #4F46E5; /* Highlighting with Indigo */
+  outline: none;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.2);
+}
+
+.login-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #4F46E5; /* Indigo button */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #3B38D1; /* Slightly darker Indigo */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .login-input {
+    font-size: 0.9rem;
+  }
+}

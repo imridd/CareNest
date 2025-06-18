@@ -1,0 +1,55 @@
+/* Footer Styling */
+.footer {
+  background-color: #D3EAFE; /* Matches Navbar */
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Similar to Navbar */
+}
+
+/* Footer Container */
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 40px; /* Same as navbar */
+  margin-right: 10px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: #FF87CA; /* Matches Navbar */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #E071A5;
+  text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.8;
+}

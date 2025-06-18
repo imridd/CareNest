@@ -1,0 +1,75 @@
+.signup-login-container {
+  background-color: #D3EAFE; /* same as Home bg */
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signup-login-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 2px solid #A7D5F8;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #FF87CA;
+  outline: none;
+}
+
+.auth-form button {
+  background-color: #FF87CA;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #e071a5;
+}
+
+.toggle-link {
+  margin-top: 15px;
+  color: #0077b6;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.toggle-link:hover {
+  color: #023e8a;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 500px) {
+  .signup-login-container {
+    padding: 20px;
+    margin: 30px 20px;
+  }
+
+  .auth-form input,
+  .auth-form button {
+    font-size: 0.95rem;
+  }
+}

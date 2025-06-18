@@ -1,0 +1,89 @@
+/* Button Container - Proper Spacing */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem; /* Reduced gap */
+  margin-top: 1rem;
+}
+
+/* Compact Button Styles */
+.donate-btn, .receive-btn {
+  padding: 6px 14px; /* Adjusted padding for compact size */
+  font-size: 0.85rem; /* Slightly smaller text */
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  min-width: 100px; /* Prevents excessive stretching */
+  max-width: 140px; /* Ensures compact size */
+}
+
+/* Donate Button */
+.donate-btn {
+  background-color: #E63946; /* Strong red */
+  color: white;
+}
+
+.donate-btn:hover {
+  transform: scale(1.05);
+  background-color: #FF87CA;
+}
+
+/* Receive Button */
+.receive-btn {
+  background-color: #4F46E5; /* Indigo */
+  color: white;
+}
+
+.receive-btn:hover {
+  transform: scale(1.05);
+  background-color: #3E39C8;
+}
+/* Mission & Vision Section */
+.grid-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+  justify-content: center;
+  align-items: center; /* Centers content */
+  gap: 2rem; /* Reduced gap for a cleaner look */
+  margin-top: 2rem;
+}
+
+/* Mission & Vision Cards */
+.grid-card {
+  background-color: #fff8f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+}
+
+/* Card Image */
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  max-height: 180px; /* Ensures images are uniform */
+  object-fit: cover;
+}
+
+/* Card Title & Text */
+.card-title {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
