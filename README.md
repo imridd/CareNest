@@ -50,40 +50,30 @@ CareNest is a full-stack web application built to connect donors and receivers f
 
 ### 🔧 Clone & Setup
 
-git clone https://github.com/imridd/CareNest.git
+    git clone https://github.com/imridd/CareNest.git
 cd CareNest
 ###  🖥️ Frontend (client)
-
-cd client
-npm install
-npm start
-⚙️ Backend (server)
-
-cd server
-./mvnw spring-boot:run
+     cd client
+     npm install
+     npm start
+## ⚙️ Backend (server)
+     cd server
+     ./mvnw spring-boot:run
 Make sure your application.properties is configured with MySQL credentials.
 
-🔐 Admin Credentials
-Email: admin@carenest.com
-Password: your_admin_password (set in backend)
+##   🔐 Admin Credentials
+     Email: admin@carenest.com
+     Password: your_admin_password (set in backend)
 
-📌 Screenshots
-Add UI screenshots of the Home Page, Forms, and Admin Dashboard here.
+##   ✨ Contributors
+     Ridha R. (imridd) — Full Stack Developer
 
-✨ Contributors
-Ridha R. (imridd) — Full Stack Developer
+##  📝 License
+     This project is open-source and free to use under the MIT License.
 
-📝 License
-This project is open-source and free to use under the MIT License.
+## 💡 Future Improvements
+         Email verification
+         Admin notifications
+         Analytics for donation trends
 
-💡 Future Improvements
-Email verification
-Admin notifications
-Analytics for donation trends
 
-Would you like:
-- A **lighter version** for college submission?
-- A **screenshot section** with placeholders ready?
-- Help converting this to a **GitHub-friendly README with badges**?
-
-Let me know and I’ll polish it further ✨
