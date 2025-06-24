@@ -2,14 +2,6 @@
 
 CareNest is a full-stack web application built to connect donors and receivers for essential items like food and clothing. The platform also includes a secure admin dashboard for monitoring and managing all donation and receive requests.
 
----
-
-## 🚀 Live Demo
-
-🌐 Frontend: [https://carenest.netlify.app](https://carenest.netlify.app)  
-🔗 Backend API: [https://carenest-backend.onrender.com](https://carenest-backend.onrender.com)
-
----
 
 ## 🧩 Features
 
