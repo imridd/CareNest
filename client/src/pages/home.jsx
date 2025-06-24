@@ -4,7 +4,7 @@ import '../App.css';
 import missionImg from '../assets/mission.jpg';
 import visionImg from '../assets/vision.jpg';
 import { motion } from 'framer-motion';
-import Footer from './Footer.jsx';
+// import Footer from './Footer.jsx';
 import '../components/Home.css';
 
 const Home = () => {
@@ -23,10 +23,10 @@ const Home = () => {
           <p className="hero-subtitle">Bringing hope through food and clothing donations</p>
           <div className="button-container">
             <button className="donate-btn" onClick={() => navigate('/donate')}>
-              Donate 
+              Donate Food or Cloth
             </button>
             <button className="receive-btn" onClick={() => navigate('/receive')}>
-              Receive 
+              Receive Food or Cloth
             </button>
           </div>
         </section>
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-       <Footer/>
+       {/* <Footer/> */}
     </motion.div>
   );
 };

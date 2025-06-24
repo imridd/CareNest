@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import foodImg from '../assets/request-food.jpg';
 import clothesImg from '../assets/request-clothes.jpg';
-import Footer from './Footer';
 import '../App.css';
 import RequestForm from './RequestForm'; // Import the request form
 
@@ -47,7 +46,6 @@ const Receive = () => {
       </div>
 
       {requestType && <RequestForm type={requestType} onClose={closeForm} />}
-      <Footer />
     </div>
   );
 };

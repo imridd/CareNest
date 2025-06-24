@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../components/SignupLogin.css';
-import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
+import axios from '../api/axiosConfig';
 
 const SignupLogin = () => {
   const [isSignup, setIsSignup] = useState(true);
@@ -9,30 +9,45 @@ const SignupLogin = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const isAdmin = localStorage.getItem('isAdmin') === 'true';
+    const loggedInUser = localStorage.getItem('loggedInUser');
+
+    if (isAdmin) {
+      console.log("🔁 Redirecting to Admin Dashboard...");
+      navigate('/admin');
+    } else if (loggedInUser) {
+      console.log("🔁 Redirecting to Home...");
+      navigate('/');
+    }
+  }, [navigate]);
+
   const toggleForm = () => setIsSignup(!isSignup);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (isSignup) {
-      // Signup logic
-      localStorage.setItem('userEmail', email);
-      localStorage.setItem('userPassword', password);
-      alert('Signup successful! Now login.');
-      setIsSignup(false);
-    } else {
-      // Login logic
-      const storedEmail = localStorage.getItem('userEmail');
-      const storedPassword = localStorage.getItem('userPassword');
-
-      if (email === 'admin@carenest.com' && password === 'admin123') {
-        localStorage.setItem('isAdmin', 'true');
-        navigate('/adminlogin');
-      } else if (email === storedEmail && password === storedPassword) {
-        alert('Login successful!');
-        navigate('/');
+    try {
+      if (isSignup) {
+        const res = await axios.post('/care-nest/users/signup', { email, password });
+        console.log('✅ Signup success:', res.data);
+        alert('Signup successful! Now login.');
+        setIsSignup(false);
       } else {
-        alert('Invalid credentials. Try again.');
+        if (email === 'admin@gmail.com' && password === 'admin123') {
+          console.log("✅ Admin credentials matched");
+          localStorage.setItem('isAdmin', 'true');
+          navigate('/admin');
+        } else {
+          const res = await axios.post('/care-nest/users/login', { email, password });
+          console.log('✅ User login success:', res.data);
+          localStorage.setItem('loggedInUser', JSON.stringify(res.data));
+          alert('Login successful!');
+          navigate('/');
+        }
       }
+    } catch (error) {
+      console.error('❌ Auth error:', error);
+      alert('Invalid credentials or server error. Try again.');
     }
   };
 
@@ -59,9 +74,11 @@ const SignupLogin = () => {
       <p onClick={toggleForm} className="toggle-link">
         {isSignup ? 'Already have an account? Login' : "Don't have an account? Signup"}
       </p>
-      <Footer />
     </div>
   );
 };
 
 export default SignupLogin;
+
+
+

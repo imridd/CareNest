@@ -1,0 +1,111 @@
+/* Container Styles */
+.user-status-container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.user-status-container h2 {
+  font-size: 28px;
+  color: #0b6bcb;
+  margin-bottom: 30px;
+}
+
+/* Input and Button */
+.user-status-container input {
+  width: 300px;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.user-status-container input:focus {
+  border-color: #0b6bcb;
+  outline: none;
+}
+
+.user-status-container button {
+  padding: 12px 25px;
+  background-color: #0b6bcb;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width:auto;
+}
+
+.user-status-container button:hover {
+  background-color: #094fa3;
+}
+
+/* Result Section */
+.status-results {
+  margin-top: 40px;
+  text-align: left;
+}
+
+/* Subheading */
+.status-results h3 {
+  color: #333;
+  margin: 25px 0 15px;
+  font-size: 22px;
+  border-bottom: 2px solid #0b6bcb;
+  padding-bottom: 5px;
+}
+
+/* Table Styling */
+.status-results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.status-results th,
+.status-results td {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.status-results th {
+  background-color: #0b6bcb;
+  color: white;
+}
+
+.status-results tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.status-results tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Fade In Effect (Optional) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-status-container {
+  animation: fadeIn 0.5s ease-in-out;
+}
+

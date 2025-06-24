@@ -3,7 +3,6 @@ import '../components/Donate.css';
 import foodImg from '../assets/donate-food.jpg';
 import clothesImg from '../assets/donate-clothes.jpg';
 import '../App.css';
-import Footer from './Footer.jsx';
 import DonateForm from './DonateForm'; // Import the donation form
 
 const Donate = () => {
@@ -44,7 +43,6 @@ const Donate = () => {
 
       {/* Render the donation form dynamically */}
       {donationType && <DonateForm type={donationType} onClose={closeForm} />}
-      <Footer/>
     </div>
   );
 };
