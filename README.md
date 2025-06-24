@@ -26,30 +26,25 @@ CareNest is a full-stack web application built to connect donors and receivers f
 | Frontend  | React.js, Axios, CSS         |
 | Backend   | Spring Boot, Maven, REST API |
 | Database  | MySQL (PlanetScale / XAMPP)  |
-| Hosting   | Netlify (Frontend), Render (Backend) |
+
 
 ---
 
 ## 🗂️ Project Structure
 
-CareNest/
-├── client/ # React frontend
-│ └── src/
-│ └── components/
-│ └── pages/
-├── server/ # Spring Boot backend
-│ └── src/main/java/com/carenest/
-│ └── controllers/
-│ └── models/
-│ └── repositories/
-│ └── services/
-├── README.md
+     CareNest/
+       ├── client/ # React frontend
+       │ └── src/
+       │ └── components/
+       │ └── pages/
+       ├── server/ # Spring Boot backend
+       │ └── src/main/java/com/carenest/
+       │ └── controllers/
+       │ └── models/
+       │ └── repositories/
+       │ └── services/
+       ├── README.md
 
-yaml
-Copy
-Edit
-
----
 
 ## 📦 Setup Instructions
 
@@ -83,9 +78,7 @@ This project is open-source and free to use under the MIT License.
 
 💡 Future Improvements
 Email verification
-
 Admin notifications
-
 Analytics for donation trends
 
 Would you like:
